@@ -13,7 +13,7 @@ pipeline {
       }
       stage('three') {
         steps {
-          echo 'Done!'
+          mail bcc: '', body: 'Success', cc: '', from: '', replyTo: '', subject: 'Email', to: 'gitpractice03@gmail.com'
         }
       }
     }
